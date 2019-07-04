@@ -1,0 +1,53 @@
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+        integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+        integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+<script type="text/javascript">
+    function copiarMensagem() {
+        var copyText = document.getElementById("myMessage");
+
+        /* Select the text field */
+        copyText.select();
+
+        /* Copy the text inside the text field */
+        document.execCommand("copy");
+
+        /* Alert the copied text */
+        alert("Mensagem Copiada!");
+    }
+
+    function copiarRemetente() {
+        var copyText = document.getElementById("myRemetente");
+
+        /* Select the text field */
+        copyText.select();
+
+        /* Copy the text inside the text field */
+        document.execCommand("copy");
+
+        /* Alert the copied text */
+        alert("Remetente Copiado!");
+    }
+</script>
+<div class="row mt-1">
+    <div class="col-md-12">
+        <ul class="stepper stepper-vertical">
+
+            <h2>SMS - Boas vindas Maripá<br><br></h2>
+
+            <strong>Mensagem: </strong></br>
+            <textarea readonly id="myMessage" rows="4" cols="60">Seja bem-vindo à Pontocom Telecom! Adicione nosso whatsapp para receber recados (44)99825-0978
+    
+pontocomtelecom.com.br/assinante</textarea></br>
+            <button onclick="copiarMensagem()">Copiar Mensagem</button></br></br>
+
+            <strong>Remetente: </strong></br>
+            <textarea readonly id="myRemetente" rows="1" cols="60">Pontocom Telecom</textarea></br>
+            <button onclick="copiarRemetente()">Copiar Remetente</button></br></br>
+        </ul>
+    </div>
+</div>
